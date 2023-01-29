@@ -9,7 +9,7 @@ Created an application that enables employees to generate random passwords based
 
 
 ## Display
-![Password generator screenshot](assets/03-javascript-homework-demo.png)
+![Password generator screenshot](./Assets/03-javascript-homework-demo.png)
 
 ## Features
 * Select password length between 8 and 128 characters
