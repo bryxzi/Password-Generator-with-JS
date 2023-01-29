@@ -27,7 +27,27 @@ else {
   return;
 }
 
+let lowercase = window.confirm('do you want lowercase letters?');
+let uppercase = window.confirm('do you want uppercase letters?');
+let numeric = window.confirm('do you want numbers?');
+let special = window.confirm('do you want special characters?');
 
+if (!lowercase && !uppercase && !numeric && !special) {
+console.log('you must atleast select one');
+return;
+}
+
+var password = "";
+var characters = "";
+if (lowercase) characters += "abcdefghijklmnopqrstuvwxyz";
+if (uppercase) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+if (numeric) characters += "0123456789";
+if (special) characters += "!@#$%^&*()_+-=[]{}|;':\"<>,.?/\\";
+
+for (let i = 0; i < passlength; i++) 
+  password += characters[Math.floor(Math.random() * characters.length)];
+  
+  console.log(password);
 }
 
 
